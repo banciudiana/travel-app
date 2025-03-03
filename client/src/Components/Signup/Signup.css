@@ -1,0 +1,128 @@
+/* Signup.css - Blue World Map Theme */
+
+/* Background and main container styles */
+body {
+    
+    background-color: #0a192f;
+    background-image: url("../../assets/images/MapSignUp.png");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .sign-up-container {
+    margin: 0 auto; /* Adăugat pentru centrare orizontală */
+    position: absolute;
+    top: 50%; /* Poziționează partea de sus la 50% din înălțimea containerului */
+    left: 50%; /* Poziționează partea stângă la 50% din lățimea containerului */
+    transform: translate(-50%, -50%);
+    background: rgba(13, 40, 80, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(4, 12, 24, 0.5);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Form header */
+  .sign-up-container h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  
+  .sign-up-container h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #64B5F6, #1E88E5);
+  }
+  
+  /* Form styles */
+  .sign-up-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sign-up-form label {
+    color: #90CAF9;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  
+  .sign-up-form input {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid rgba(144, 202, 249, 0.3);
+    background-color: rgba(13, 40, 80, 0.3);
+    color: white;
+    font-size: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .sign-up-form input:focus {
+    outline: none;
+    border-color: #64B5F6;
+    box-shadow: 0 0 0 2px rgba(100, 181, 246, 0.25);
+    background-color: rgba(21, 63, 125, 0.5);
+  }
+  
+  .sign-up-form input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Button styles */
+  .sign-up-form button {
+    padding: 15px;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #1976D2, #2196F3);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+  }
+  
+  .sign-up-form button:hover {
+    background: linear-gradient(90deg, #1E88E5, #42A5F5);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(33, 150, 243, 0.4);
+  }
+  
+  .sign-up-form button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .sign-up-container {
+      padding: 30px 20px;
+      width: 90%;
+    }
+    
+    .sign-up-form input, 
+    .sign-up-form button {
+      padding: 12px;
+    }
+  }
